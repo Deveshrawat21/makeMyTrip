@@ -1,0 +1,200 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.result,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.result td,table.result th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.result th {vertical-align:bottom}
+tr.param th {padding-left:1em;padding-right:1em}
+tr.param td {padding-left:.5em;padding-right:2em}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.result td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.result tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">2</td><td class="numi">2</td><td class="numi">0</td><td class="numi_attn">2</td><td class="numi">92.6 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="passed" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">Default test &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="2">com.crm.qa.testcases.MailTestCases</td><td><a href="#m1"><b>TC001_LoginwithvalidCredential</b>  </a></td><td class="numi">1</td><td>1685026596762</td><td class="numi">64468</td></tr><tr class="failedodd"><td><a href="#m2"><b>TC004_ReadMail</b>  </a></td><td class="numi">1</td><td>1685026675154</td><td class="numi">14145</td></tr>
+<tr><th colspan="4">Default test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="2">com.crm.qa.testcases.MailTestCases</td><td><a href="#m3"><b>TC002_CheckForMailLogo</b>  </a></td><td class="numi">1</td><td>1685026661238</td><td class="numi">157</td></tr><tr class="passedodd"><td><a href="#m4"><b>TC003_ComposeNewMail</b>  </a></td><td class="numi">1</td><td>1685026661399</td><td class="numi">13752</td></tr>
+</table>
+<h1>Default test</h1>
+<h2 id="m1">com.crm.qa.testcases.MailTestCases:TC004_ReadMail</h2>
+<div style="padding-left:3em">
+<p>java.lang.reflect.InvocationTargetException
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-8VD40C3U&apos;, ip: &apos;192.168.1.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_311&apos;
+Driver info: driver.version: RemoteWebDriver</p>
+org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:332)
+<br/>at org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:155)
+<br/>at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
+<br/>at org.openqa.selenium.json.JsonOutput.lambda$null$21(JsonOutput.java:168)
+<br/>at java.util.LinkedHashMap$LinkedValues.forEach(Unknown Source)
+<br/>at org.openqa.selenium.json.JsonOutput.lambda$new$22(JsonOutput.java:168)
+<br/>at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
+<br/>at org.openqa.selenium.json.JsonOutput.lambda$null$23(JsonOutput.java:177)
+<br/>at com.google.common.collect.SingletonImmutableBiMap.forEach(SingletonImmutableBiMap.java:65)
+<br/>at org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:176)
+<br/>at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
+<br/>at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:255)
+<br/>at org.openqa.selenium.json.Json.toJson(Json.java:42)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:227)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:117)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)
+<br/>at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)
+<br/>at org.openqa.selenium.interactions.Actions.perform(Actions.java:595)
+<br/>at com.crm.qa.pages.ComposeMail.clickOnDownloadBtn(ComposeMail.java:117)
+<br/>at com.crm.qa.testcases.MailTestCases.TC004_ReadMail(MailTestCases.java:73)
+<br/>25 lines not shown
+<p>Caused by null</p>
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+<br/>at java.lang.reflect.Method.invoke(Unknown Source)
+<br/>at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:328)
+<br/>at org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:155)
+<br/>at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
+<br/>at org.openqa.selenium.json.JsonOutput.lambda$null$21(JsonOutput.java:168)
+<br/>at java.util.LinkedHashMap$LinkedValues.forEach(Unknown Source)
+<br/>at org.openqa.selenium.json.JsonOutput.lambda$new$22(JsonOutput.java:168)
+<br/>at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
+<br/>at org.openqa.selenium.json.JsonOutput.lambda$null$23(JsonOutput.java:177)
+<br/>at com.google.common.collect.SingletonImmutableBiMap.forEach(SingletonImmutableBiMap.java:65)
+<br/>at org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:176)
+<br/>at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
+<br/>at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:255)
+<br/>at org.openqa.selenium.json.Json.toJson(Json.java:42)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:227)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:117)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)
+<br/>at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)
+<br/>at org.openqa.selenium.interactions.Actions.perform(Actions.java:595)
+<br/>at com.crm.qa.pages.ComposeMail.clickOnDownloadBtn(ComposeMail.java:117)
+<br/>at com.crm.qa.testcases.MailTestCases.TC004_ReadMail(MailTestCases.java:73)
+<br/>25 lines not shown
+<p>Caused by no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//img[@data-test-id=&apos;attachment-thumbnail&apos;]&quot;}
+  (Session info: chrome=113.0.5672.127)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-8VD40C3U&apos;, ip: &apos;192.168.1.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_311&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\deves\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61548}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d9bb34e57b965b969ff3b39e09674f0e
+*** Element info: {Using=xpath, value=//img[@data-test-id=&apos;attachment-thumbnail&apos;]}</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at java.lang.reflect.Constructor.newInstance(Unknown Source)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+<br/>at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+<br/>at com.sun.proxy.$Proxy8.getWrappedElement(Unknown Source)
+<br/>at org.openqa.selenium.interactions.PointerInput$Origin.asArg(PointerInput.java:204)
+<br/>at org.openqa.selenium.interactions.PointerInput$Move.encode(PointerInput.java:155)
+<br/>at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:75)
+<br/>at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:84)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+<br/>at java.lang.reflect.Method.invoke(Unknown Source)
+<br/>at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:328)
+<br/>at org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:155)
+<br/>at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
+<br/>at org.openqa.selenium.json.JsonOutput.lambda$null$21(JsonOutput.java:168)
+<br/>at java.util.LinkedHashMap$LinkedValues.forEach(Unknown Source)
+<br/>at org.openqa.selenium.json.JsonOutput.lambda$new$22(JsonOutput.java:168)
+<br/>at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
+<br/>at org.openqa.selenium.json.JsonOutput.lambda$null$23(JsonOutput.java:177)
+<br/>at com.google.common.collect.SingletonImmutableBiMap.forEach(SingletonImmutableBiMap.java:65)
+<br/>at org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:176)
+<br/>at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
+<br/>at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:255)
+<br/>at org.openqa.selenium.json.Json.toJson(Json.java:42)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:227)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:117)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)
+<br/>at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)
+<br/>at org.openqa.selenium.interactions.Actions.perform(Actions.java:595)
+<br/>at com.crm.qa.pages.ComposeMail.clickOnDownloadBtn(ComposeMail.java:117)
+<br/>at com.crm.qa.testcases.MailTestCases.TC004_ReadMail(MailTestCases.java:73)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">com.crm.qa.testcases.MailTestCases:TC001_LoginwithvalidCredential</h2>
+<div style="padding-left:3em">
+<p>no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[.=&apos;Login&apos;]&quot;}
+  (Session info: chrome=113.0.5672.127)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-8VD40C3U&apos;, ip: &apos;192.168.1.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_311&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\deves\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61548}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d9bb34e57b965b969ff3b39e09674f0e
+*** Element info: {Using=xpath, value=//span[.=&apos;Login&apos;]}</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at java.lang.reflect.Constructor.newInstance(Unknown Source)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+<br/>at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+<br/>at com.sun.proxy.$Proxy8.click(Unknown Source)
+<br/>at com.crm.qa.pages.AolHomePage.loginwithvalidCredential(AolHomePage.java:49)
+<br/>at com.crm.qa.testcases.MailTestCases.TC001_LoginwithvalidCredential(MailTestCases.java:39)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">com.crm.qa.testcases.MailTestCases:TC002_CheckForMailLogo</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">com.crm.qa.testcases.MailTestCases:TC003_ComposeNewMail</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>
